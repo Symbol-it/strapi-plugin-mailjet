@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contacts-list",
+      "handler": "mailjet.getList",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/config",
+      "handler": "mailjet.getConfig",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/config",
+      "handler": "mailjet.saveConfig",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

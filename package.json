@@ -1,0 +1,31 @@
+{
+  "name": "strapi-plugin-mailjet",
+  "version": "0.0.1",
+  "description": "Mailjet strapi plugin to connect to Mailjet api. Offers subscribe and unsubscribe feature contact from contact list.",
+  "strapi": {
+    "name": "Mailjet",
+    "icon": "paper-plane",
+    "description": "Mailjet strapi plugin to connect to Mailjet api. Offers subscribe and unsubscribe feature contact from contact list."
+  },
+  "dependencies": {
+    "node-mailjet": "3.3.1",
+    "strapi": "3.0.0"
+  },
+  "author": {
+    "name": "Tony Deplanque",
+    "email": "tony.deplanque@symbol-it.fr",
+    "url": "https://github.com/TonyDeplanque"
+  },
+  "maintainers": [
+    {
+      "name": "Tony Deplanque",
+      "email": "tony.deplanque@symbol-it.fr",
+      "url": "https://github.com/TonyDeplanque"
+    }
+  ],
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
