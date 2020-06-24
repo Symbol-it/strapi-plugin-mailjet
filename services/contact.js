@@ -6,13 +6,13 @@
  * @description: A set of functions similar to controller's actions to avoid code duplication.
  */
 
-const { mailjet } = require('./connect')
+const { mailjet } = require('./mailjet-client')
 
 module.exports = {
 
   async subscribe(email, username, listId) {
-    const connect = await mailjet();
-    return connect
+    const client = await mailjet();
+    return client
       .post("contactslist", {'version': 'v3'})
       .id(listId)
       .action("managecontact")
@@ -25,8 +25,8 @@ module.exports = {
   },
 
   async subscribeMultiple(subcribers, listId) {
-    const connect = await mailjet();
-    return connect
+    const client = await mailjet();
+    return client
       .post("contactslist", {'version': 'v3'})
       .id(listId)
       .action("managemanycontacts")
@@ -37,8 +37,8 @@ module.exports = {
   },
 
   async unsubscribe(email, listId) {
-    const connect = await mailjet();
-    return connect
+    const client = await mailjet();
+    return client
       .post("contactslist", {'version': 'v3'})
       .id(listId)
       .action("managecontact")
@@ -50,8 +50,8 @@ module.exports = {
   },
 
   async remove(email, listId) {
-    const connect = await mailjet();
-    return connect
+    const client = await mailjet();
+    return client
       .post("contactslist", {'version': 'v3'})
       .id(listId)
       .action("managecontact")
@@ -63,8 +63,8 @@ module.exports = {
   },
 
   async getList() {
-    const connect = await mailjet();
-    return connect
+    const client = await mailjet();
+    return client
       .get("contactslist", {'version': 'v3'})
       .request();
   }

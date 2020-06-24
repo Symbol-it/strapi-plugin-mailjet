@@ -1,5 +1,5 @@
 {
-  "name": "strapi-plugin-mailjet",
+  "name": "@symbol-it/strapi-plugin-mailjet",
   "version": "0.0.1",
   "description": "Mailjet strapi plugin to connect to Mailjet api. Offers subscribe and unsubscribe feature contact from contact list.",
   "strapi": {
@@ -11,21 +11,31 @@
     "node-mailjet": "3.3.1",
     "strapi": "3.0.0"
   },
-  "author": {
-    "name": "Tony Deplanque",
-    "email": "tony.deplanque@symbol-it.fr",
-    "url": "https://github.com/TonyDeplanque"
-  },
+  "author": "Tony Deplanque <tony.deplanque@symbol-it.fr> (https://github.com/TonyDeplanque)",
   "maintainers": [
-    {
-      "name": "Tony Deplanque",
-      "email": "tony.deplanque@symbol-it.fr",
-      "url": "https://github.com/TonyDeplanque"
-    }
+    "Tony Deplanque <tony.deplanque@symbol-it.fr> (https://github.com/TonyDeplanque)"
   ],
   "engines": {
     "node": ">=10.0.0",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Symbol-it/strapi-plugin-mailjet.git"
+  },
+  "keywords": [
+    "strapi",
+    "mailjet"
+  ],
+  "bugs": {
+    "url": "https://github.com/Symbol-it/strapi-plugin-mailjet/issues"
+  },
+  "homepage": "https://github.com/Symbol-it/strapi-plugin-mailjet#readme"
 }
