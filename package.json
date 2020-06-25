@@ -1,6 +1,6 @@
 {
   "name": "@symbol-it/strapi-plugin-mailjet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Mailjet strapi plugin to connect to Mailjet api. Offers subscribe and unsubscribe feature contact from contact list.",
   "strapi": {
     "name": "Mailjet",
